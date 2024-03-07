@@ -14,6 +14,7 @@ builder.Services.AddSwaggerGen();
 
 //register services
 builder.Services.AddScoped<IAdminService, AdminService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 //connect database using connection string
 builder.Services.AddDbContext<AppDbContext>(options =>
